@@ -1,0 +1,268 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html,body{
+    background-color: lightblue;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+#navbar a{
+    text-decoration: none;
+    color: black;
+}
+#navbar{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5rem;
+    background-color: #fff;
+}
+.list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+}
+
+#first{
+    background-color: #1f1f61;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0;
+}
+
+#first h1{
+    font-size: 4rem;
+}
+#first p{
+    font-size: 14px;
+    padding-top: 20px;
+    margin: 0 auto;
+}
+#first img {
+    width: 100%;
+    padding: 3rem 7rem 3rem 2rem;
+}
+
+.head{
+    line-height: 40px;
+}
+
+.beside-image{
+    width: 90%;
+    padding-left: 10%;
+}
+#first a{
+    color: white;
+}
+.learn-more{
+    
+    padding: 10px 30px;
+    border: 2px solid white;
+    text-decoration: none;
+}
+#second{
+    width: 60%;
+    background-color: white;
+    margin: 2rem auto;
+    padding: 2rem;
+}
+
+.second{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+.second img {
+    width: 100%;
+}
+.read-more{
+    
+    padding: 10px 25px;
+    background-color: rgb(59, 59, 233);
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+}
+
+#third{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    
+}
+#third p{
+    font-size: 20px;
+    padding-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.ready , .about{
+    font-size: 4rem;
+}
+.thirdlearn{
+    padding: 10px 20px;
+    background-color: rgb(219, 219, 235);
+    text-decoration: none;
+    border-radius: 20px;
+}
+.contact{
+    padding: 10px 35px;
+    background-color: rgb(219, 219, 235);
+    text-decoration: none;
+    border-radius: 20px;
+    color: red;
+}
+
+    .left{
+        background-color: blue;
+        width: 100%;
+        text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+    .right{
+        background-color: red;
+        width: 100%;
+        text-align: center;
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    #fourth{
+        padding: 3rem 9rem;
+    }
+    
+    #fourth h3{
+        margin: 10px 0;
+        color: rgb(214, 214, 214);
+        font-weight: 400;
+    }
+
+    .reviewone, .reviewtwo{
+        display: flex;
+        gap: 20px;
+        margin-bottom: 1rem;
+    }
+    .reviewone div, .reviewtwo div{
+        background-color: white;
+        padding: 3rem;
+        border-radius: 7px;
+    }
+    #myBtn{
+
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        border: none;
+        outline: none;
+        background-color: blue;
+        color: white;
+        cursor: pointer;
+        padding: 1px;
+        border-radius: 10px;
+        font-size: 25px;
+    }
+
+    .ri-menu-line, .ri-close-circle-line{
+        display: none;
+    }
+
+    @media screen and (max-width:809px) {
+        #first{
+            flex-direction: column;
+        }
+        #first .bg-img {
+            width: 80%;
+            margin: 1rem auto;
+        }
+        .ready , .about{
+            font-size: 3rem;
+        }
+    .second{
+        flex-direction: column;
+        }
+        .reviewone, .reviewtwo{
+            display: flex;
+            gap: 10px;
+            margin-bottom: 1rem;
+        }
+        #fourth h3{
+            margin: 5px 5px;
+            color: rgb(214, 214, 214);
+            font-weight: 300;
+        }
+        .reviewone div, .reviewtwo div{
+            background-color: white;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+    }
+        @media screen and (max-width:690px) {
+            .reviewone, .reviewtwo{
+                display: flex;
+                flex-direction: column;
+                width: 130%;
+                text-align: left;
+            } 
+            #fourth{
+                padding: 3rem 9rem 3rem 3rem;
+                text-align: left;
+            }
+            #third{
+                flex-direction: column;
+            }
+            .ready , .about{
+                font-size: 18px;
+                padding-bottom: 0px;
+            }
+            .left, .right{
+             padding: 10px;
+             padding-bottom: 3rem;
+             padding-top: 1rem;   
+            }
+            #third p{
+                font-size: 20px;
+                padding-bottom: 2rem;
+                padding-top: 2rem;
+            }
+
+            #navbar{
+                
+            }
+
+            #navbar .list a{
+                color: #fff;
+            }
+
+            .ri-menu-line, .ri-close-circle-line{
+                display: block;
+                font-size: 18px;
+                cursor: pointer;
+            }
+
+            .list{
+                position: absolute;
+                top: 0;
+                right: -200px;
+                padding: 2rem;
+                flex-direction:column ;
+                background-color: #1f4761;
+                color: #fff;
+                width: 200px;
+                height: 100vh;
+                transition: .5s;
+            }
+
+    }
+
+    /* 576, 480, 375 */
